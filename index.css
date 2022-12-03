@@ -6,40 +6,60 @@ body {
   background-image: url("./images/bg-mobile.svg");
   background-size: contain;
   background-repeat: no-repeat;
-  font-size: 1.1rem;
+  background-color: hsl(257, 40%, 49%);
+
+  font-size: 1rem;
   margin: 0 auto;
   width: 100%;
   min-height: 100vh;
-  background-color: hsl(257, 40%, 49%);
+  color: whitesmoke;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  color: whitesmoke;
 }
 
 h1 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
+  line-height: 36px;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1.5em;
 }
 
 p,
 a {
   font-family: "Open Sans", sans-serif;
+  line-height: 24px;
 }
 
-header {
-  padding-left: 15px;
-  padding-bottom: 10px;
+.header {
+  margin-right: auto;
 }
 
-.container,
-footer {
+.logo {
+  width: 120px;
+  margin-bottom: 4.375em;
+}
+
+.mockup {
+  width: 296px;
+  height: 209px;
+  margin-bottom: 3.75em;
+}
+
+.container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  width: 90%;
+  padding: 2.39em 2.5em 2.5em;
 }
 
 .top,
@@ -53,12 +73,17 @@ footer {
 .btn {
   color: hsl(257, 40%, 49%);
   text-decoration: none;
-  margin-top: 10px;
-  padding: 14px 70px;
+  width: 200px;
+  height: 40px;
+  font-size: 0.75rem;
+  font-family: "Poppins", sans-serif;
   background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 50px;
-  display: inline-block;
   box-shadow: 0 4px 15px hsl(258, 38%, 21%);
+  margin-bottom: 4em;
 }
 
 .btn:hover {
@@ -68,10 +93,10 @@ footer {
 }
 
 .fa-brands {
-  padding-bottom: 5px;
-  transform: scale(2);
+  transform: scale(1.5);
   padding-left: 15px;
   padding-right: 15px;
+  margin-bottom: 20px;
 }
 
 .fa-brands:hover {
@@ -85,6 +110,8 @@ footer {
 }
 .attribution a {
   color: hsl(300, 69%, 71%);
+  text-decoration: none;
+  font-weight: bold;
 }
 
 @media (min-width: 60em) {
@@ -93,7 +120,7 @@ footer {
     background-size: cover;
   }
 
-  header {
+  .logos {
     margin: 0 auto;
     display: flex;
     max-width: 1400px;
