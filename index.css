@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("./images/bg-mobile.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-size: 1.1rem;
+  margin: 0 auto;
+  width: 100%;
+  min-height: 100vh;
+  background-color: hsl(257, 40%, 49%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+
+p,
+a {
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  padding-left: 15px;
+  padding-bottom: 10px;
+}
+
+.container,
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+}
+
+.top,
+.bottom {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.btn {
+  color: hsl(257, 40%, 49%);
+  text-decoration: none;
+  margin-top: 10px;
+  padding: 14px 70px;
+  background-color: whitesmoke;
+  border-radius: 50px;
+  display: inline-block;
+  box-shadow: 0 4px 15px hsl(258, 38%, 21%);
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: hsl(300, 69%, 71%);
+  color: whitesmoke;
+}
+
+.fa-brands {
+  padding-bottom: 5px;
+  transform: scale(2);
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.fa-brands:hover {
+  cursor: pointer;
+  color: hsl(300, 69%, 71%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(300, 69%, 71%);
+}
+
+@media (min-width: 60em) {
+  body {
+    background-image: url("./images/bg-desktop.svg");
+    background-size: cover;
+  }
+
+  header {
+    margin: 0 auto;
+    display: flex;
+    max-width: 1400px;
+    width: 88%;
+    padding-bottom: 90px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1400px;
+  }
+
+  .right {
+    width: 40%;
+  }
+
+  footer {
+    width: 88%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    max-width: 1400px;
+  }
+}
